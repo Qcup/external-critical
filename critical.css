@@ -1,0 +1,1505 @@
+:root {
+    --Gap: 1rem;
+    --GutterSm: 0.75rem;
+    --Gutter: clamp(1.25rem, 1.673vw + 0.715rem, 3rem);
+    --ContentSpacer: 1.5rem;
+    --SectionSpacer: clamp(1.5rem, 1.554vw + 1.003rem, 3.125rem);
+    --SectionHdrSpacer: 2.5rem;
+    --SpacerXs: 0.5rem;
+    --SpacerSm: 0.75rem;
+    --Spacer: 1rem;
+    --SpacerLg: 1.25rem;
+    --SpacerXl: 1.5rem;
+    --SpacerXxl: 2rem;
+    --SpacerXxxl: clamp(1.75rem, 1.195vw + 1.368rem, 3rem);
+    --RadiusXxs: 0.375rem;
+    --RadiusXs: 0.5rem;
+    --RadiusSm: 0.75rem;
+    --Radius: 1rem;
+    --RadiusLg: 1.25rem;
+    --RadiusXl: 1.5rem;
+    --RadiusXxl: 2rem;
+    --ShadowSm: 2px 2px 2px 0px rgba(0, 0, 0, 0.12), -0.25px -0.25px 1px 0px rgba(0, 0, 0, 0.06), 1px 1px 8px 0px rgba(0, 0, 0, 0.06);
+    --Shadow: 1px 1px 16px 0px rgba(0, 0, 0, 0.06), 4px 4px 12px 0px rgba(0, 0, 0, 0.12);
+    --FontWeightBold: 600;
+    --PipeColor: #6c757d;
+    --IcnGuarantee: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%233da288' viewBox='0 0 16 16'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/></svg>");
+    --IcnPlayBtn: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='10' stroke='%23343434' stroke-width='2'/%3E%3Cpath d='m16.293 11.293-4.586-4.586c-.63-.63-1.707-.184-1.707.707v9.172c0 .89 1.077 1.337 1.707.707l4.586-4.586a1 1 0 0 0 0-1.414Z' stroke='%23343434' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E");
+    --IcnCarousel: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.703 12.707 18.996 12l.707.707Zm0-1.414-.707.707.707-.707ZM20 13H4v-2h16v2Zm-7.797 5.793L18.996 12l1.414 1.414-6.793 6.793-1.414-1.414ZM18.996 12l-6.793-6.793 1.414-1.414 6.793 6.793L18.996 12Zm0 0 1.414-1.414a2 2 0 0 1 0 2.828L18.996 12Z' fill='%236E6E6E'/%3E%3C/svg%3E");
+    --IcnCarousel2: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23F2F2F2'/%3E%3Cpath d='M31.703 24.707 30.996 24l.707.707Zm0-1.414-.707.707.707-.707ZM32 25H16v-2h16v2Zm-7.797 5.793L30.996 24l1.414 1.414-6.793 6.793-1.414-1.414ZM30.996 24l-6.793-6.793 1.414-1.414 6.793 6.793L30.996 24Zm0 0 1.414-1.414a2 2 0 0 1 0 2.828L30.996 24Z' fill='%23343434'/%3E%3C/svg%3E");
+    --AccordionFontWeight: 600;
+    --AccordionHdrSpacer: 1rem;
+    --AccordionItemsFontSize: 1rem;
+    --AccordionToggleSize: 24px;
+    --AccordionToggleWeight: 600;
+    --BadgeAttentionBackgroundColor: #ff1c1c;
+    --BadgeAttentionBorderColor: transparent;
+    --BadgeAttentionTextColor: #fff;
+    --BadgePromoBackgroundColor: #c01818;
+    --BadgePromoBorderColor: transparent;
+    --BadgePromoTextColor: #fff;
+    --CollapseCardTitlePadding: 0 0.75rem 0.25rem;
+    --ExpiryBackgroundColor: #fde8e2;
+    --FooterTrademarksFontSize: 0.75rem;
+    --PriceRowFinalColor: #000000;
+    --PriceRowFinalFontSize: 1.5rem;
+    --PriceRowFinalFontWeight: 600;
+    --PriceRowRetailColor: #a19c9c;
+    --PriceRowRetailFontSize: 1.25rem;
+    --PriceRowRetailFontWeight: 400;
+    --PriceRowDiscountColor: #ff1c1c;
+    --PriceRowDiscountFontSize: 0.875rem;
+    --PriceRowDiscountFontWeight: 600;
+    --PriceRowDiscountDescColor: #ff1c1c;
+    --PriceRowDiscountDescFontSize: 0.875rem;
+    --PriceRowDiscountDescFontWeight: 600;
+    --PriceRowPlanDescColor: #000000;
+    --PriceRowPlanDescFontSize: 0.875rem;
+    --PriceRowPlanDescFontWeight: 400;
+    --PriceBlockFinalColor: #000000;
+    --PriceBlockFinalFontSize: 1.5rem;
+    --PriceBlockFinalFontWeight: 400;
+    --PriceBlockRetailColor: #000000;
+    --PriceBlockRetailFontSize: 0.75rem;
+    --PriceBlockRetailFontWeight: 400;
+    --PriceBlockDiscountColor: #c01818;
+    --PriceBlockDiscountFontSize: 0.875rem;
+    --PriceBlockDiscountFontWeight: 600;
+    --PriceBlockDiscountDescColor: #c01818;
+    --PriceBlockDiscountDescFontSize: 0.875rem;
+    --PriceBlockDiscountDescFontWeight: 600;
+    --PriceBlockPlanDescColor: #000000;
+    --PriceBlockPlanDescFontSize: 0.875rem;
+    --PriceBlockPlanDescFontWeight: 600;
+    --ProgressBarSuccessShapeColor: #24bc98;
+    --ProgressBarBorderRadius: 0.125rem;
+    --RadioBtnBadgeFontSize: 11px;
+    --RadioBtnPadding: 1rem;
+    --RadioBtnBackgroundColor: #f9f1ec;
+    --ToggleThickness: 2px;
+    --ToggleWidth: 10px;
+    --ToggleHeight: 10px;
+    --ToggleColor: #000000;
+    --ToggleWidthSm: 7px;
+    --ToggleHeightSm: 7px;
+    --ToggleThicknessSm: 2px;
+    --PopoverBg: #fff;
+    --PopoverFontSize: 0.75rem;
+    --PopoverIcon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='11' fill='none'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M4.873 4.444a1.307 1.307 0 0 1 2.54.436c0 .87-1.307 1.306-1.307 1.306m.035 1.743h.004m4.352-2.178a4.356 4.356 0 1 1-8.712 0 4.356 4.356 0 0 1 8.712 0Z' stroke='%234258FF' stroke-width='.871' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' transform='translate(.914 .524)' d='M0 0h10.454v10.454H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    --PopoverIconWidth: 0.75rem;
+    --PopoverIconHeight: 0.688rem;
+    --AccordionCollapseBackgroundColor: rgba(0, 0, 0, 0);
+    --AccordionCollapseBorderColor: rgba(0, 0, 0, 0.175);
+    --AccordionCollapseTextColor: #000000;
+    --AccordionExpandBackgroundColor: rgba(0, 0, 0, 0);
+    --AccordionExpandTextColor: #000000;
+    --AlertBannerBackgroundColor: rgba(255, 255, 255, 0.33);
+    --AlertBannerDarkBackgroundColor: #343434;
+    --AlertBannerDarkBorderColor: rgba(0, 0, 0, 0);
+    --AlertBannerDarkTextColor: #ffffff;
+    --AlertBannerBorderWidth: 0.0625rem;
+    --AlertBannerInfoBackgroundColor: #4258ff;
+    --AlertBannerInfoBorderColor: rgba(0, 0, 0, 0);
+    --AlertBannerInfoTextColor: #ffffff;
+    --AlertBannerErrorBackgroundColor: #ff1c1c;
+    --AlertBannerErrorBorderColor: rgba(0, 0, 0, 0);
+    --AlertBannerErrorTextColor: #ffffff;
+    --AlertBannerWarningBackgroundColor: #ff7900;
+    --AlertBannerWarningBorderColor: rgba(0, 0, 0, 0);
+    --AlertBannerWarningTextColor: #ffffff;
+    --AlertBannerBorder: 0;
+    --AlertBannerBorderRadius: 1rem;
+    --AlertBannerAlignitems: center;
+    --AlertBannerPromoBackgroundColor: linear-gradient(90deg, #ff3838 37.62%, #c90063 84.8%);
+    --AlertBannerPromoBorderColor: transparent;
+    --AlertBannerPromoTextColor: #ffffff;
+    --AlertBannerMargin: 1rem 1.5rem 1.5rem;
+    --AlertBannerSuccessBackgroundColor: #24bc98;
+    --AlertBannerSuccessTextColor: #fff;
+    --AlertBannerSuccessBorderColor: transparent;
+    --BackgroundColor: #fafafa;
+    --BackgroundBackgroundColor: #ffffff;
+    --BackgroundSecondaryBackgroundColor: #f9fafb;
+    --BackgroundTertiaryBackgroundColor: #f2f2f2;
+    --BackgroundQuaternaryBackgroundColor: linear-gradient(180deg, #f6f6f6 0%, #ededed 100%);
+    --BackgroundDarkTertiaryBackgroundColor: linear-gradient(354.33deg, #e9e8e7 0%, #ffffff 100%);
+    --BackgroundDarkSecondaryBackgroundColor: #343434;
+    --BackgroundAccentBackgroundColor: #f9f1ec;
+    --BackgroundAccentPromoBackgroundColor: linear-gradient(137.29deg, #ff1c1c 0%, #f07570 0.01%, #c52d42 95.31%);
+    --BadgeBackgroundColor: #000000;
+    --BadgeBorderColor: rgba(0, 0, 0, 0);
+    --BadgeTextColor: #ffffff;
+    --BadgePrimaryBackgroundColor: #ff1c1c;
+    --BadgePrimaryBorderColor: rgba(0, 0, 0, 0);
+    --BadgePrimaryTextColor: #ffffff;
+    --BadgeSuccessBackgroundColor: #3da288;
+    --BadgeSuccessBorderColor: rgba(0, 0, 0, 0);
+    --BadgeSuccessTextColor: #ffffff;
+    --BadgeInfoBackgroundColor: #4258ff;
+    --BadgeInfoBorderColor: rgba(0, 0, 0, 0);
+    --BadgeInfoTextColor: #ffffff;
+    --BadgeLightBackgroundColor: #ffffff;
+    --BadgeLightBorderColor: rgba(0, 0, 0, 0);
+    --BadgeLightTextColor: #ff1c1c;
+    --BadgeWarningBackgroundColor: #ffe3c2;
+    --BadgeWarningBorderColor: rgba(0, 0, 0, 0);
+    --BadgeWarningTextColor: #343434;
+    --BrandMcafeeColor: #ff1c1c;
+    --BrandMcafeeDarkColor: #000000;
+    --BrandMcafeeLightColor: #ffffff;
+    --ButtonBackgroundColor: #ff1c1c;
+    --ButtonTextColor: #ffffff;
+    --ButtonHoverBackgroundColor: #c01818;
+    --ButtonHoverBorderColor: #c01818;
+    --ButtonHoverTextColor: #ffffff;
+    --ButtonPressedBackgroundColor: #c01818;
+    --ButtonPressedBorderColor: rgba(0, 0, 0, 0);
+    --ButtonPressedTextColor: #ffffff;
+    --ButtonSuccessBackgroundColor: #24bc98;
+    --ButtonSuccessTextColor: #ffffff;
+    --ButtonSuccessHoverBackgroundColor: #29d6ac;
+    --ButtonSuccessHoverBorderColor: #29d6ac;
+    --ButtonSuccessHoverTextColor: #ffffff;
+    --ButtonSuccessPressedBackgroundColor: #3da288;
+    --ButtonSuccessPressedBorderColor: #3da288;
+    --ButtonSuccessPressedTextColor: #ffffff;
+    --ButtonDarkBackgroundColor: #454545;
+    --ButtonDarkTextColor: #ffffff;
+    --ButtonDarkHoverBackgroundColor: #6e6e6e07;
+    --ButtonDarkHoverBorderColor: #6e6e6e;
+    --ButtonDarkHoverTextColor: #ffffff;
+    --ButtonDarkPressedBackgroundColor: #343434;
+    --ButtonDarkPressedBorderColor: #343434;
+    --ButtonDarkPressedTextColor: #ffffff;
+    --ButtonLightBackgroundColor: #ffffff;
+    --ButtonLightTextColor: #000000;
+    --ButtonLightHoverBackgroundColor: #ffffff;
+    --ButtonLightHoverBorderColor: #ffffff;
+    --ButtonLightHoverTextColor: #000000;
+    --ButtonLightPressedBackgroundColor: #ffffff;
+    --ButtonLightPressedTextColor: #000000;
+    --ButtonDisabledBackgroundColor: #e8e8e8;
+    --ButtonDisabledBorderColor: #e8e8e8;
+    --ButtonDisabledTextColor: #a19c9c;
+    --ButtonSecondaryBackgroundColor: transparent;
+    --ButtonSecondaryTextColor: #454545;
+    --ButtonSecondaryHoverBackgroundColor: #e80000;
+    --ButtonSecondaryHoverBorderColor: #e80000;
+    --ButtonSecondaryHoverTextColor: #ffffff;
+    --ButtonSecondaryPressedBackgroundColor: #e8e8e8;
+    --ButtonSecondaryPressedBorderColor: #6e6e6e;
+    --ButtonSecondaryPressedTextColor: #454545;
+    --ButtonSecondaryDisabledBackgroundColor: rgba(0, 0, 0, 0);
+    --ButtonSecondaryDisabledBorderColor: #dbdbdb;
+    --ButtonSecondaryDisabledTextColor: #a19c9c;
+    --ButtonTertiaryTextColor: #ff1c1c;
+    --ButtonTertiaryHoverTextColor: #ff615c;
+    --ButtonTertiaryDisabledTextColor: #b2b2b2;
+    --CardBackgroundColor: #ffffff;
+    --CardPromoBackgroundColor: #f9f1ec;
+    --CardPromoBorderColor: #efddd7;
+    --CardBorderColor: rgba(0, 0, 0, 0.175);
+    --CarouselIndicatorShapeColor: #b2b2b2;
+    --CarouselIndicatorHoverShapeColor: #cccccc;
+    --CarouselIndicatorPressedShapeColor: #000000;
+    --CarouselIndicatorSelectedBackgroundColor: rgba(0, 0, 0, 0);
+    --CarouselIconArrowColor: #6e6e6e;
+    --CloseButtonBackgroundColor: #f2f2f2;
+    --CloseButtonIconColor: #454545;
+    --CloseButtonHoverBackgroundColor: #e8e8e8;
+    --DividerMidBorderColor: #a19c9c;
+    --DropdownBackgroundColor: #ffffff;
+    --DropdownBorderColor: rgba(149, 149, 149, 1);
+    --DropdownTextColor: #454545;
+    --DropdownFocusBorderColor: #4258ff;
+    --InputSelectedBorderColor: #4258ff;
+    --LinkTextColor: #000000;
+    --LinkHoverTextColor: #ea1010;
+    --LinkSecondaryTextColor: #af0707;
+    --LinkSecondaryHoverTextColor: #ff1c1c;
+    --ModalMdBackgroundColor: #ffffff;
+    --ModalMdBorderColor: #ffffff;
+    --NavBarItemSelectedTextColor: #c01818;
+    --OverflowMenuItemDividerColor: #f2f2f2;
+    --OverflowMenuItemTextColor: #454545;
+    --OverflowMenuItemHoverBackgroundColor: #f2f2f2;
+    --OverflowMenuItemHoverTextColor: #454545;
+    --OverflowMenuItemSelectedBackgroundColor: #ff1c1c;
+    --OverflowMenuItemSelectedTextColor: #f4f5fe;
+    --OverflowMenuItemDisabledBackgroundColor: #f2f2f2;
+    --RadioBackgroundColor: #ffffff;
+    --RadioBorderColor: #b1babf;
+    --RadioHoverBackgroundColor: #efefef;
+    --RadioSelectedBackgroundColor: #ffffff;
+    --RadioSelectedBorderColor: #ff1c1c;
+    --SwitchBorderRadius: 1.5rem;
+    --TabsBorderColor: rgba(0, 0, 0, 0);
+    --TabsSelectedBackgroundColor: #ffffff;
+    --TabsSelectedBorderColor: rgba(0, 0, 0, 0);
+    --TabsSelectedHighlightColor: #ff1c1c;
+    --TabsHoverBorderColor: rgba(0, 0, 0, 0);
+    --TabsBorderWidth: 0.0625rem;
+    --TypographyHeaderXxxlColor: #000;
+    --TypographyHeaderXxlColor: #000;
+    --TypographyHeaderXlColor: #000;
+    --TypographyHeaderLgColor: #000;
+    --TypographyHeaderMdColor: #000;
+    --TypographyHeaderSmColor: #000;
+    --TypographyHeaderXsColor: #000;
+    --TypographyHeaderXxsColor: #000;
+    --TypographyHeaderXxxsColor: #000;
+    --TypographyBodyXlColor: #000;
+    --AccordionCollapseBorderWidth: 0.0625rem;
+    --BadgeBorderRadius: 0.375rem;
+    --ButtonBorderWidth: 0.0625rem;
+    --ButtonBorderRadius: 2rem;
+    --CardXlBorderRadius: 1.25rem;
+    --CardMdBorderRadius: 0.75rem;
+    --CardBorderWidth: 0.0625rem;
+    --CloseButtonBorderRadius: 3rem;
+    --DropdownBorderWidth: 0.0625rem;
+    --DropdownBorderRadius: 0.5rem;
+    --ModalLgBorderRadius: 1.5rem;
+    --ModalMdBorderWidth: 0.0625rem;
+    --ModalMdBorderRadius: 1rem;
+    --ModalSmBorderRadius: 0.75rem;
+    --PencilBannerBgColor: #ffffff;
+    --PencilBannerTextColor: #343434;
+    --PencilBannerBorder: 1px solid #b2b2b2;
+    --PencilBannerBorderRadius: 0.75rem;
+    --PencilBannerSecondaryBgColor: linear-gradient(90deg, #ff3838 37.62%, #c90063 84.8%);
+    --PencilBannerSecondaryTextColor: #ffffff;
+    --PencilBannerSecondaryLinkColor: #ffffff;
+    --PencilBannerSecondaryBorderRadius: 0.75rem;
+    --RadioBorderWidth: 0.125rem;
+    --RadioBorderRadius: 3rem;
+    --RadioWidth: 1.25em;
+    --RadioHeight: 1.25em;
+    --RadioSelectedWidth: 0.1875em;
+    --TypographyHeaderXxxlFontSize: 6rem;
+    --TypographyHeaderXxlFontSize: 3.75rem;
+    --TypographyHeaderXlFontSize: 3rem;
+    --TypographyHeaderLgFontSize: 2.5rem;
+    --TypographyHeaderMdFontSize: 2rem;
+    --TypographyHeaderSmFontSize: 1.75rem;
+    --TypographyHeaderXsFontSize: 1.5rem;
+    --TypographyHeaderXxsFontSize: 1.25rem;
+    --TypographyHeaderXxxsFontSize: 1.125rem;
+    --TypographyBodyXlFontSize: 1.25rem;
+    --TypographyBodyLgFontSize: 1.125rem;
+    --TypographyBodyMdFontSize: 1rem;
+    --TypographyBodySmFontSize: 0.875rem;
+    --AccordionCollapseBorderRadius: 0px;
+    --BadgeBorderRadius: 4.75px;
+    --ButtonBorder: none;
+    --ButtonBorderRadius: 32px;
+    --ButtonSuccessBorder: 0px solid rgba(36, 188, 152, 1);
+    --ButtonDarkBorder: 0px solid rgba(255, 28, 28, 1);
+    --ButtonLightBorder: 1px solid rgba(255, 255, 255, 1);
+    --ButtonLightPressedBorder: 1px solid rgba(255, 255, 255, 1);
+    --ButtonSecondaryBorder: 1px solid #a19c9c;
+    --CloseButtonBorder: 1px solid rgba(232, 232, 232, 1);
+    --CloseButtonBorderRadius: 48px;
+    --DividerHeavyBorder: none;
+    --DropdownBorderRadius: 8px;
+    --RadioBorder: 1px solid #ff1c1c;
+    --RadioFocusBorder: 2px solid rgba(66, 88, 255, 1);
+    --SwitchBorderRadius: 24px;
+    --TypographyHeaderXxxlStrongFontWeight: 600;
+    --TypographyHeaderXxlStrongFontWeight: 600;
+    --TypographyHeaderXlStrongFontWeight: 600;
+    --TypographyHeaderLgStrongFontWeight: 600;
+    --TypographyHeaderMdStrongFontWeight: 600;
+    --TypographyHeaderSmStrongFontWeight: 600;
+    --TypographyHeaderXsStrongFontWeight: 600;
+    --TypographyHeaderXxsFontWeight: 400;
+    --TypographyHeaderXxxsFontWeight: 400;
+}
+
+/* pencil banner */
+.alert-without-close.var1 .alert-badge {
+    --bs-badge-padding-x: 0.5rem;
+    --bs-badge-padding-y: 0.25rem;
+    --bs-badge-font-size: 0.875rem;
+    --bs-badge-font-weight: 600;
+    --bs-badge-color: var(--BadgeTextColor);
+    --bs-badge-border-radius: var(--BadgeBorderRadius);
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--bs-badge-border-radius);
+}
+
+.alert-without-close.var1 .alert-badge:empty {
+    display: none;
+}
+
+.alert {
+    --bs-alert-bg: transparent;
+    --bs-alert-padding-x: 1rem;
+    --bs-alert-padding-y: 0.75rem;
+    --bs-alert-margin-bottom: 1rem;
+    --bs-alert-color: inherit;
+    --bs-alert-border-color: transparent;
+    --bs-alert-border: var(--AlertBannerBorderWidth) solid var(--bs-alert-border-color);
+    --bs-alert-border-radius: var(--AlertBannerBorderRadius);
+    --bs-alert-link-color: inherit;
+    position: relative;
+    padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+    margin-bottom: var(--bs-alert-margin-bottom);
+    color: var(--bs-alert-color);
+    background-color: var(--bs-alert-bg);
+    border: var(--bs-alert-border);
+    border-radius: var(--bs-alert-border-radius);
+}
+
+.alert-dismissible {
+    padding-right: 3rem;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: var(--AlertBannerAlignitems);
+}
+
+.alert-badge {
+    margin-right: var(--SpacerSm);
+}
+
+:focus {
+    outline: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--Outline) !important;
+    outline-offset: 2px;
+}
+
+b {
+    font-weight: 600;
+}
+
+.alert-without-close.var1 .alert {
+    --bs-alert-color: var(--AlertBannerPromoTextColor);
+    --bs-alert-border-color: var(--AlertBannerPromoBorderColor);
+    background: var(--AlertBannerPromoBackgroundColor);
+    border-width: var(--AlertBannerBorder);
+}
+
+.alert {
+    --bs-alert-bg: var(--AlertBannerBackgroundColor);
+    box-shadow: var(--ShadowSm);
+}
+
+.alert-without-close.var1 .alert-badge {
+    background: var(--BadgeLightBackgroundColor);
+    border: 1px solid var(--BadgeLightBorderColor);
+    color: var(--BadgeLightTextColor);
+}
+
+.alert-without-close .alert {
+    margin: var(--AlertBannerMargin);
+}
+
+.alert-without-close.var1 .alert {
+    --bs-alert-padding-y: 0.825rem;
+    --AlertBannerPromoBackgroundColor: linear-gradient(270.01deg, #b10062 16.34%, #f51627 86.33%);
+}
+
+.alert-without-close.var1 .alert.alert-dismissible {
+    padding-right: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .alert-without-close.var1 .alert-message {
+        font-size: 0.875rem;
+    }
+}
+
+/* alert */
+img {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-with-supscription,
+.section-content {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+
+    .header-with-supscription,
+    .section-content {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .header-with-supscription,
+    .section-content {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .header-with-supscription,
+    .section-content {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header-with-supscription,
+    .section-content {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media (min-width: 768px) {
+    .flexcolumn-col {
+        flex: 1 0 0%;
+    }
+}
+
+:focus {
+    outline: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--Outline) !important;
+    outline-offset: 2px;
+}
+
+b {
+    font-weight: 600;
+}
+
+.flexcolumn-row {
+    gap: var(--Gap);
+}
+
+.flexcolumn-col {
+    overflow: hidden;
+}
+
+.flexcolumn-col:has(:focus-visible) {
+    overflow: unset;
+}
+
+@media (max-width: 575.98px) {
+    .section {
+        margin-inline: var(--GutterSm);
+    }
+}
+
+.fc-hilite {
+    color: var(--TextHighlight);
+}
+
+.section-content {
+    padding-block: var(--SectionSpacer);
+}
+
+.section-color.primary {
+    background: var(--BackgroundBackgroundColor);
+}
+
+.header-with-supscription.pre-var1 .section-content {
+    padding-block: 0;
+    --bs-gutter-x: 0;
+}
+
+.header-with-supscription.pre-var1 .header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-with-supscription.pre-var1 .subscription-wrapper {
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .header-with-supscription.pre-var1 .subscription-wrapper {
+        justify-content: start;
+    }
+}
+
+.header-with-supscription.pre-var1 .subscription-alert {
+    display: flex;
+    align-items: center;
+    padding: var(--SpacerXs) var(--Spacer);
+    border-radius: var(--bs-border-radius-pill);
+    background: var(--ExpiryBackgroundColor);
+    height: 3rem;
+}
+
+.header-with-supscription.pre-var1 .subscription-alert .rte_image {
+    margin-left: var(--SpacerXs);
+}
+
+.header-with-supscription.pre-var1 .subscription-msg .rte_ddr span {
+    color: #f4663e;
+}
+
+@media (min-width: 992px) {
+    .header-with-supscription.pre-var1 .flexcolumn-col:first-child {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-with-supscription.pre-var1 .flexcolumn-row {
+        flex-direction: column;
+    }
+
+    .header-with-supscription.pre-var1 .subscription-alert {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-with-supscription.pre-var1 .header-wrapper {
+        justify-content: space-between;
+    }
+}
+
+.header-with-supscription.pre-var1 .fc-hilite {
+    color: #f4663e;
+}
+
+/* hero */
+.features-with-dynamic-radio-and-dropdown .hero-title,
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+h1 {
+    font-size: var(--TypographyHeaderXxxlFontSize);
+}
+
+.features-with-dynamic-radio-and-dropdown .hero-title {
+    font-size: var(--TypographyHeaderLgFontSize);
+}
+
+b {
+    font-weight: bolder;
+}
+
+a {
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: underline;
+}
+
+a:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+    text-decoration: none;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(1.05rem + 0.6vw);
+    line-height: inherit;
+}
+
+legend+* {
+    clear: left;
+}
+
+@media (min-width: 1200px) {
+    legend {
+        font-size: 1.5rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features-with-dynamic-radio-and-dropdown .section,
+.section-content {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+
+    .features-with-dynamic-radio-and-dropdown .section,
+    .section-content {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .features-with-dynamic-radio-and-dropdown .section,
+    .section-content {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .features-with-dynamic-radio-and-dropdown .section,
+    .section-content {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .features-with-dynamic-radio-and-dropdown .section,
+    .section-content {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.cmp-radiobutton .radio-col1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+
+.features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:first-child,
+.features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:nth-child(2) {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.cmp-radiobutton .radio-col2 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+
+@media (min-width: 768px) {
+    .flexcolumn-col {
+        flex: 1 0 0%;
+    }
+}
+
+.btn {
+    --bs-btn-padding-x: 1.5rem;
+    --bs-btn-padding-y: 0.625rem;
+    --bs-btn-font-size: var(--TypographyBodyMdFontSize);
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: var(--ButtonBorderWidth);
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: var(--ButtonBorderRadius);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+}
+
+.btn:disabled {
+    color: var(--bs-btn-disabled-color);
+    background-color: var(--bs-btn-disabled-bg);
+    border-color: var(--bs-btn-disabled-border-color);
+    opacity: var(--bs-btn-disabled-opacity);
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .radio-badge {
+    --bs-badge-padding-x: 0.5rem;
+    --bs-badge-padding-y: 0.25rem;
+    --bs-badge-font-size: 0.875rem;
+    --bs-badge-font-weight: 600;
+    --bs-badge-color: var(--BadgeTextColor);
+    --bs-badge-border-radius: var(--BadgeBorderRadius);
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--bs-badge-border-radius);
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .radio-badge:empty {
+    display: none;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse !important;
+}
+
+.me-1 {
+    margin-right: 0.25rem !important;
+}
+
+:focus {
+    outline: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--Outline) !important;
+    outline-offset: 2px;
+}
+
+.cmp-addtocart .btn {
+    min-width: 10.875rem;
+}
+
+.cmp-collapse .collapse-btn {
+    --bs-btn-padding-x: 0;
+}
+
+.cmp-collapse .collapse-btn:active {
+    --bs-btn-active-border-color: transparent;
+}
+
+.cmp-collapse .collapse-btn:after {
+    vertical-align: 2px;
+}
+
+.cmp-collapse .collapse-container {
+    flex-direction: column-reverse !important;
+}
+
+.collapse-icon {
+    margin-right: var(--SpacerXs);
+}
+
+a {
+    color: var(--LinkTextColor);
+}
+
+a:hover {
+    color: var(--LinkHoverTextColor);
+}
+
+b {
+    font-weight: 600;
+}
+
+.flexcolumn-row {
+    gap: var(--Gap);
+}
+
+.flexcolumn-col {
+    overflow: hidden;
+}
+
+.flexcolumn-col:has(:focus-visible) {
+    overflow: unset;
+}
+
+.pay-icon {
+    width: 39px;
+    height: 25px;
+    border: 0.2px solid #abb2c3;
+    border-radius: 2px;
+    display: inline-block;
+    background: url(https://www.mcafee.com/etc.clientlibs/ecom-aemcs-frontend/npcld/themes/assets/resources/img/payment-sprite-icons.svg) no-repeat;
+}
+
+.visa {
+    background-position: 0 0;
+}
+
+.mastercard {
+    background-position: -268px 0;
+}
+
+.americanexpress {
+    background-position: -191px 0;
+}
+
+.discover {
+    background-position: -229px 0;
+}
+
+.paypal {
+    background-position: -153px 0;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+}
+
+.price-row .final-price {
+    color: var(--PriceRowFinalColor);
+    font-size: var(--PriceRowFinalFontSize);
+    font-weight: var(--PriceRowFinalFontWeight);
+}
+
+.price-row .retail-price {
+    color: var(--PriceRowRetailColor);
+    font-size: var(--PriceRowRetailFontSize);
+    font-weight: var(--PriceRowRetailFontWeight);
+    text-decoration: line-through;
+}
+
+.price-row .discount-price {
+    color: var(--PriceRowDiscountColor);
+    font-size: var(--PriceRowDiscountFontSize);
+    font-weight: var(--PriceRowDiscountFontWeight);
+}
+
+.price-row .discount-description {
+    color: var(--PriceRowDiscountDescColor);
+    font-size: var(--PriceRowDiscountDescFontSize);
+    font-weight: var(--PriceRowDiscountDescFontWeight);
+}
+
+.price-row .plan-description {
+    color: var(--PriceRowPlanDescColor);
+    font-size: var(--PriceRowPlanDescFontSize);
+    font-weight: var(--PriceRowPlanDescFontWeight);
+}
+
+.cmp-radiobutton .radio-badge:empty {
+    display: none;
+}
+
+.cmp-radiobutton .radio-button {
+    display: flex;
+    align-items: center;
+    padding: var(--RadioBtnPadding);
+    border-bottom: 1px dotted var(--RadioBorderColor);
+}
+
+.cmp-radiobutton .radio-button:has(input:checked) {
+    background: var(--RadioBtnBackgroundColor);
+}
+
+.cmp-radiobutton .radio-col1 {
+    margin-right: calc(var(--Spacer) * 0.25);
+}
+
+.cmp-radiobutton .radio-input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: var(--RadioBorderWidth) solid var(--RadioSelectedBorderColor);
+    border-radius: var(--RadioBorderRadius);
+    height: var(--RadioWidth);
+    width: var(--RadioHeight);
+    display: block;
+}
+
+.cmp-radiobutton .radio-input[type="radio"]:checked {
+    background-color: var(--RadioSelectedBorderColor);
+    box-shadow: inset 0 0 0 var(--RadioSelectedWidth) var(--RadioBackgroundColor);
+}
+
+.cmp-radiobutton .radio-input[type="radio"]:hover {
+    box-shadow: inset 0 0 0 var(--RadioSelectedWidth) var(--RadioHoverBackgroundColor);
+}
+
+@media (max-width: 575.98px) {
+    .section {
+        margin-inline: var(--GutterSm);
+    }
+}
+
+h1 {
+    font-weight: var(--TypographyHeaderXxxlStrongFontWeight);
+    color: var(--TypographyHeaderXxxlColor);
+    font-size: calc(1.5rem + 6vw);
+    line-height: calc(1.6rem + 7.2vw);
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h1 {
+        line-height: 7rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .hero-title {
+    font-weight: var(--TypographyHeaderLgStrongFontWeight);
+    color: var(--TypographyHeaderLgColor);
+    font-size: calc(1.15rem + 1.8vw);
+    line-height: calc(1.2rem + 2.4vw);
+}
+
+@media (min-width: 1200px) {
+    .features-with-dynamic-radio-and-dropdown .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .hero-title {
+        line-height: 3rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .radio-title {
+    font-size: calc(1.025rem + 0.3vw);
+    line-height: calc(1.075rem + 0.9vw);
+    color: var(--TypographyBodyXlColor);
+}
+
+@media (min-width: 1200px) {
+    .features-with-dynamic-radio-and-dropdown .radio-title {
+        font-size: 1.25rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .radio-title {
+        line-height: 1.75rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .section-description {
+    font-size: calc(1.0125rem + 0.15vw);
+    line-height: calc(1.075rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+    .features-with-dynamic-radio-and-dropdown .section-description {
+        font-size: 1.125rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .section-description {
+        line-height: 1.75rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn,
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .expand-description,
+.features-with-dynamic-radio-and-dropdown .discount-description,
+.features-with-dynamic-radio-and-dropdown .features-post-content,
+.features-with-dynamic-radio-and-dropdown .offer-terms,
+.features-with-dynamic-radio-and-dropdown .os-supported,
+.features-with-dynamic-radio-and-dropdown .plan-description,
+.features-with-dynamic-radio-and-dropdown .section-title {
+    font-size: 0.875rem;
+    line-height: calc(1.025rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+
+    .features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn,
+    .features-with-dynamic-radio-and-dropdown .cmp-collapse .expand-description,
+    .features-with-dynamic-radio-and-dropdown .discount-description,
+    .features-with-dynamic-radio-and-dropdown .features-post-content,
+    .features-with-dynamic-radio-and-dropdown .offer-terms,
+    .features-with-dynamic-radio-and-dropdown .os-supported,
+    .features-with-dynamic-radio-and-dropdown .plan-description,
+    .features-with-dynamic-radio-and-dropdown .section-title {
+        line-height: 1.25rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title,
+.features-with-dynamic-radio-and-dropdown .payment-description {
+    font-size: 0.75rem;
+    line-height: calc(1.025rem + 0.3vw);
+}
+
+.fc-attention {
+    color: var(--TextAttention);
+}
+
+.section-content {
+    padding-block: var(--SectionSpacer);
+}
+
+.section-color.primary {
+    background: var(--BackgroundBackgroundColor);
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .radio-badge {
+    background: var(--BadgeSuccessBackgroundColor);
+    border: 1px solid var(--BadgeSuccessBorderColor);
+    color: var(--BadgeSuccessTextColor);
+}
+
+.cmp-addtocart .btn,
+.features-with-dynamic-radio-and-dropdown .button-label {
+    background: var(--ButtonBackgroundColor);
+    border: var(--ButtonBorder);
+    color: var(--ButtonTextColor);
+}
+
+.cmp-addtocart .btn:hover,
+.features-with-dynamic-radio-and-dropdown .button-label:hover {
+    background-color: var(--ButtonHoverBackgroundColor);
+    border-color: var(--ButtonHoverBorderColor);
+    color: var(--ButtonHoverTextColor);
+}
+
+.cmp-addtocart .btn:active,
+.cmp-addtocart .btn:focus,
+.features-with-dynamic-radio-and-dropdown .btn.button-label:active,
+.features-with-dynamic-radio-and-dropdown .btn.button-label:focus {
+    background-color: var(--ButtonPressedBackgroundColor);
+    border-color: var(--ButtonPressedBorderColor);
+    color: var(--ButtonPressedTextColor);
+}
+
+.cmp-addtocart .btn:disabled,
+.features-with-dynamic-radio-and-dropdown .button-label:disabled {
+    background-color: var(--ButtonDisabledBackgroundColor);
+    border-color: var(--ButtonDisabledBorderColor);
+    color: var(--ButtonDisabledTextColor);
+}
+
+.cmp-collapse .collapse-btn:after,
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn::after,
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-btn::after,
+.features-with-dynamic-radio-and-dropdown .features-post-content:after {
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-left: var(--SpacerXs);
+    color: var(--ToggleColor);
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-btn::after {
+    border-bottom: var(--ToggleThickness) solid;
+    border-right: var(--ToggleThickness) solid;
+    width: var(--ToggleWidth);
+    height: var(--ToggleHeight);
+}
+
+.cmp-collapse .collapse-btn:after,
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn::after,
+.features-with-dynamic-radio-and-dropdown .features-post-content:after {
+    border-bottom: var(--ToggleThicknessSm) solid;
+    border-right: var(--ToggleThicknessSm) solid;
+    width: var(--ToggleWidthSm);
+    height: var(--ToggleHeightSm);
+}
+
+.features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row {
+    justify-content: space-between;
+}
+
+.features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:first-child,
+.features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:nth-child(2) {
+    width: 49%;
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card a {
+    text-decoration: none;
+    color: initial;
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-hdr {
+    font-weight: var(--FontWeightBold);
+    padding-block: var(--SpacerXs);
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title {
+    background: var(--BackgroundAccentBackgroundColor);
+    margin: var(--SpacerXs) var(--SpacerXs) var(--SpacerXs) 0;
+    padding: var(--CollapseCardTitlePadding);
+    border-radius: var(--RadiusXxs);
+    display: inline-grid;
+    vertical-align: top;
+}
+
+@media (min-width: 992px) {
+    .features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title {
+        width: 48%;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title.collapse-disabled {
+    filter: grayscale(1);
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title.collapse-disabled .collapse-body,
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title.collapse-disabled .collapse-btn {
+    filter: invert(0.5);
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--SpacerSm) var(--SpacerXs);
+}
+
+.features-with-dynamic-radio-and-dropdown .collapse-card .collapse-btn-content {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-weight: var(--FontWeightBold);
+}
+
+.features-with-dynamic-radio-and-dropdown .price-row {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.features-with-dynamic-radio-and-dropdown .section-title {
+    font-weight: var(--FontWeightBold);
+}
+
+.features-with-dynamic-radio-and-dropdown .section-description {
+    font-weight: var(--FontWeightBold);
+    white-space: nowrap;
+}
+
+.features-with-dynamic-radio-and-dropdown .radioitem-left,
+.features-with-dynamic-radio-and-dropdown .radioitem-right {
+    display: inline-flex;
+    align-items: center;
+}
+
+.features-with-dynamic-radio-and-dropdown .radio-title {
+    font-weight: var(--FontWeightBold);
+}
+
+.features-with-dynamic-radio-and-dropdown .final-price {
+    padding-left: var(--SpacerSm);
+}
+
+@media (max-width: 575.98px) {
+    .features-with-dynamic-radio-and-dropdown .radioitem-left {
+        flex-wrap: wrap;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .radio-title {
+        font-size: 1rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .final-price {
+        --PriceRowFinalFontSize: 1.25rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .retail-price {
+        --PriceRowRetailFontSize: 1rem;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown .payment-description {
+    text-align: end;
+    margin-left: var(--SpacerXs);
+}
+
+.features-with-dynamic-radio-and-dropdown .discount-description {
+    color: var(--BrandMcafeeColor);
+    font-weight: var(--FontWeightBold);
+}
+
+.features-with-dynamic-radio-and-dropdown .plan-description {
+    padding-right: 0.5rem;
+    white-space: nowrap;
+}
+
+.features-with-dynamic-radio-and-dropdown .hero-title {
+    font-weight: 400;
+    color: var(--HeroTitleColor);
+}
+
+.features-with-dynamic-radio-and-dropdown .hero-description {
+    margin-block: var(--ContentSpacer);
+}
+
+.features-with-dynamic-radio-and-dropdown .feature-title {
+    font-size: var(--TypographyHeaderXxxsFontSize);
+    margin-bottom: var(--Spacer);
+}
+
+.features-with-dynamic-radio-and-dropdown .features-post-content {
+    margin-top: 1rem;
+    font-weight: var(--FontWeightBold);
+}
+
+.features-with-dynamic-radio-and-dropdown .features-post-content:after {
+    --ToggleColor: var(--BrandMcafeeColor);
+    vertical-align: 3px;
+}
+
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn {
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    font-weight: var(--FontWeightBold);
+    margin: 0;
+    border: 0;
+    display: flex;
+}
+
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .collapse-btn::after {
+    --ToggleColor: var(--BrandMcafeeColor);
+    position: relative;
+    top: 5px;
+}
+
+.features-with-dynamic-radio-and-dropdown .cmp-collapse .expand-description {
+    padding-top: var(--Spacer);
+    margin-left: var(--SpacerXl);
+}
+
+@media (min-width: 1200px) {
+
+    .features-with-dynamic-radio-and-dropdown .collapse-card .collapse-title,
+    .features-with-dynamic-radio-and-dropdown .payment-description {
+        line-height: 1.25rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .feature-title,
+    .features-with-dynamic-radio-and-dropdown .price-row {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .features-with-dynamic-radio-and-dropdown .row:has(.cmp-collapse) .collapse-btn {
+        position: relative;
+        width: 100%;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .row:has(.cmp-collapse) .collapse-btn::after {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 1240px) {
+
+    .features-with-dynamic-radio-and-dropdown.var1 .section,
+    .features-with-dynamic-radio-and-dropdown.var1 .section-content {
+        max-width: 1240px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1239px) {
+
+    .features-with-dynamic-radio-and-dropdown.var1 .section,
+    .features-with-dynamic-radio-and-dropdown.var1 .section-content {
+        max-width: 1200px;
+    }
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .payment-description {
+    white-space: pre-wrap;
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .radio-badge {
+    margin-left: 0.5rem;
+    font-size: var(--RadioBtnBadgeFontSize);
+    --bs-badge-font-weight: normal;
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .cmp-addtocart,
+.features-with-dynamic-radio-and-dropdown.var1 .offer-terms,
+.features-with-dynamic-radio-and-dropdown.var1 .os-supported,
+.features-with-dynamic-radio-and-dropdown.var1 .radio-section-button {
+    margin-block: var(--ContentSpacer);
+}
+
+.features-with-dynamic-radio-and-dropdown.var1 .payment-cards {
+    height: 26px;
+}
+
+@media (max-width: 575.98px) {
+    .features-with-dynamic-radio-and-dropdown.var1 .price-row {
+        line-height: 1;
+    }
+
+    .features-with-dynamic-radio-and-dropdown.var1 .price-row:has(.radio-badge:not(:empty)) {
+        margin-top: var(--SpacerXl);
+    }
+
+    .features-with-dynamic-radio-and-dropdown.var1 .radio-button {
+        padding-inline: var(--SpacerXs);
+        --RadioBtnPadding: 1.5rem;
+    }
+
+    .features-with-dynamic-radio-and-dropdown.var1 .cmp-radiobuttonitem {
+        position: relative;
+    }
+
+    .features-with-dynamic-radio-and-dropdown.var1 .radio-badge {
+        position: absolute;
+        top: 15%;
+        left: 8.5%;
+    }
+
+    .features-with-dynamic-radio-and-dropdown.var1 .final-price {
+        padding-left: var(--SpacerXs);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:first-child {
+        display: none;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .section-content>.cmp-flex-column>div>.row>.flexcolumn-col:nth-child(2) {
+        width: 100%;
+    }
+
+    .features-with-dynamic-radio-and-dropdown .button-label {
+        width: 100%;
+    }
+}
+
+/*! CSS Used from: Embedded */
+.btn {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+
+.btn:disabled {
+    pointer-events: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.cmp-radiobutton .radio-button {
+    cursor: pointer;
+}
+
+.cmp-radiobutton .radio-input[type="radio"] {
+    cursor: pointer;
+}
+
+.cmp-radiobutton .radio-input[type="radio"]:checked {
+    transition: background 0.15s, box-shadow 0.1s;
+}

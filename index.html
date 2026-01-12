@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>external critical CSS example</title>
+    <!-- Preload font early -->
+    <link rel="preload" href="/assets/fonts/poppins-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- 1. Bootstrap (external, non-blocking) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" /> </noscript>
+    <!-- 2. Your critical CSS (now external) --> <link rel="stylesheet" href="critical.css">
+    <!-- 3. Your mobile-first CSS -->
+    <!-- <link rel="stylesheet" href="css/mobile.css">  -->
+    <!-- 4. Your desktop overrides -->
+    <!-- <link rel="stylesheet" href="css/desktop.css" media="(min-width: 768px)"> -->
+    <!-- 5. Your additional external CSS (non-critical) -->
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="style.css" /></noscript>
+  </head>
+  <body>
+    <section class="cmp-sectionpicker">
+      <div class="alert-without-close var1">
+        <div class="cmp-alert placeholder-glow">
+          <div class="alert alert-dismissible" id="alert-629127666" role="alert">
+            <span class="alert-badge">NEW!</span>
+            <div class="alert-message">Introducing <b>Scam Detector!</b> Spot scams before they hit you – and your wallet.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cmp-sectionpicker">
+      <div class="header-with-supscription pre-var1">
+        <header class="cmp-section placeholder-glow">
+          <div class="section section-color primary" id="section-1114449835" data-attribute-section-tag="header">
+            <div class="section-content">
+              <div class="cmp-flex-column placeholder-glow">
+                <div id="flexcolumn--849428381">
+                  <div class="flexcolumn-row row">
+                    <div class="flexcolumn-col">
+                      <div class="flexcolumn-content">
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-e7278919bd">
+                            <div class="header-wrapper">
+                              <div class="companylogo">
+                                <span class="companylogo-image"><img class="rte_image" src="https://media.mcafeeassets.com/content/dam/npcld/standard/ecommerce/en-us/company-logo/McAfeeHzRed.svg" alt="McAfee Logo" width="148" height="28" /></span>
+                              </div>
+                              <!----><!---->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flexcolumn-col">
+                      <div class="flexcolumn-content">
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-3ab970f831">
+                            <div class="subscription-wrapper">
+                              <div class="subscription-alert">
+                                <span class="subscription-msg"
+                                  ><span class="rte_ddr"
+                                    >Your free trial <b><span class="rteFontColor fc-hilite">is about to expire</span></b
+                                    ><img
+                                      class="rte_image"
+                                      src="data:image/svg+xml;charset=UTF-8,%3Csvg%20fill%3D%22%23ff1c1c%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%200.48%200.48%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0.24%200c-0.132%200%20-0.24%200.108%20-0.24%200.24s0.108%200.24%200.24%200.24%200.24%20-0.108%200.24%20-0.24%20-0.108%20-0.24%20-0.24%20-0.24zM0.27%200.39h-0.06v-0.06h0.06v0.06zM0.27%200.3h-0.06v-0.21h0.06v0.21z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+                                      alt="Alert Icon"
+                                      width="24"
+                                      height="24" /></span
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section class="cmp-sectionpicker">
+      <div class="features-with-dynamic-radio-and-dropdown var1">
+        <div class="cmp-herosection placeholder-glow">
+          <div class="section section-color primary" id="herosection--1270841381" data-attribute-section-tag="hero">
+            <div class="section-content">
+              <div class="cmp-flex-column placeholder-glow">
+                <div id="flexcolumn--781858253">
+                  <div class="flexcolumn-row row">
+                    <div class="flexcolumn-col">
+                      <div class="flexcolumn-content">
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-1e61ead868">
+                            <div class="feature-title">
+                              See what's included in&nbsp;<span class="rte_placeholder"><b>Basic</b></span
+                              >&nbsp;protection <br />
+                              <div>(1 Device) <br /></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="htmlcomponentreference">
+                          <div class="collapse-card placeholder-glow" id="features">
+                            <div class="collapse-hdr">Security</div>
+                            <div class="collapse-title">
+                              <a id="feature1" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label1" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 44 48" fill="none">
+                                      <path
+                                        d="M22.2705 0.341309L42.6719 6.71729L43.3027 6.91455V31.0815C43.3025 34.9266 41.2551 38.481 37.9287 40.4097L27.2686 46.5903C24.0115 48.4786 19.9925 48.4784 16.7354 46.5903L6.0752 40.4097C2.85262 38.5413 0.829456 35.1471 0.706055 31.4409L0.700195 31.0815V6.91455L1.33203 6.71729L21.7334 0.341309L22.002 0.257324L22.2705 0.341309ZM2.50098 8.23682V31.0815L2.50586 31.3804C2.60852 34.4678 4.29306 37.2954 6.97754 38.8521L17.6377 45.0327C20.3366 46.5973 23.6674 46.5975 26.3662 45.0327L37.0254 38.8521C39.7965 37.2454 41.5027 34.2847 41.5029 31.0815V8.23682L22.002 2.14307L2.50098 8.23682ZM19.3262 7.80518C26.1351 7.97756 31.6015 13.5514 31.6016 20.4019L31.5977 20.7271C31.5286 23.4502 30.5936 25.957 29.0605 27.9868L34.9395 33.8657L33.666 35.1392L27.873 29.3462C25.5957 31.605 22.462 33.0024 19.001 33.0024L18.6758 32.9985C11.9752 32.8286 6.57417 27.4277 6.4043 20.7271L6.40039 20.4019C6.40049 13.4428 12.042 7.80147 19.001 7.80127L19.3262 7.80518ZM19.001 9.60107C13.0362 9.60127 8.20029 14.437 8.2002 20.4019C8.20044 26.3666 13.0363 31.2024 19.001 31.2026C24.9659 31.2026 29.8015 26.3667 29.8018 20.4019C29.8017 14.4369 24.966 9.60107 19.001 9.60107Z"
+                                        fill="url(#paint0_linear_2476_109)"></path>
+                                      <defs>
+                                        <linearGradient id="paint0_linear_2476_109" x1="0.700195" y1="0.257324" x2="48.1404" y2="42.5844" gradientUnits="userSpaceOnUse">
+                                          <stop offset="0.322995" stop-color="#FF1C1C"></stop>
+                                          <stop offset="0.935481" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  ><b style="color: rgb(192, 24, 24)">New!&nbsp;</b>Scam Detector</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label1" aria-labelledby="feature1" data-bs-parent="#features" style="">Automatic scam protection for text, email, and video.</div>
+                            </div>
+                            <div class="collapse-title">
+                              <a id="feature2" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label2" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="49" height="48" viewBox="0 0 81 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M67.772 65.619C74.044 58.916 77.885 49.909 77.885 40c0-20.718-16.792-37.5-37.5-37.5-9.906 0-18.915 3.84-25.62 10.113L67.773 65.62Zm-1.768 1.768C59.3 73.66 50.29 77.5 40.384 77.5c-20.707 0-37.5-16.782-37.5-37.5 0-9.908 3.841-18.916 10.114-25.619l15.15 15.15a6.801 6.801 0 0 0-.503 2.41v1.214H23.15c-1.748 0-3.056-1.309-3.056-3.056v-5.745a1.25 1.25 0 0 0-2.5 0V30.1c0 3.128 2.428 5.556 5.556 5.556h4.495v.748c0 1.311.051 2.62.143 3.925H23.15c-3.128 0-5.556 2.429-5.556 5.556v5.606a1.25 1.25 0 0 0 2.5 0v-5.605c0-1.748 1.308-3.056 3.056-3.056h4.859c.175 1.663.404 3.32.66 4.966l.005.031.006.031c.19.91.491 1.775.888 2.583-2.75.36-4.79 2.639-4.79 5.506v7.174a1.25 1.25 0 0 0 2.5 0v-7.174c0-1.747 1.309-3.056 3.056-3.056h.869a11.732 11.732 0 0 0 2.637 2.239l.008.004.72.44.008.006.01.006a11.263 11.263 0 0 0 11.423.02l.836-.423.055-.028.052-.033c1.345-.856 2.49-2.064 3.375-3.412l3.176 3.177v8.233a1.25 1.25 0 1 0 2.5 0v-5.733l10 10ZM30.16 31.693l8.454 8.449a1.247 1.247 0 0 0-.091.47v13.853a8.83 8.83 0 0 1-2.66-1.03l-.707-.432c-2.02-1.257-3.522-3.263-4.022-5.625-.573-3.686-.99-7.341-.99-10.975v-4.437c.002-.089.007-.18.016-.273Zm10.863 22.929V42.549l7.437 7.434c-.738 1.224-1.708 2.288-2.802 2.998l-.812.411-.036.018-.034.02a8.8 8.8 0 0 1-3.754 1.192ZM80.385 40c0 22.1-17.912 40-40 40-22.089 0-40-17.9-40-40s17.911-40 40-40c22.088 0 40 17.9 40 40Zm-18.46-16.896c.69 0 1.25.56 1.25 1.25V30.1c0 3.13-2.43 5.556-5.566 5.556h-4.474v.758c0 1.324-.03 2.62-.106 3.916h4.58c3.136 0 5.567 2.425 5.567 5.556v5.605a1.25 1.25 0 0 1-2.5 0v-5.605c0-1.746-1.307-3.056-3.067-3.056h-4.782c-.078.74-.172 1.486-.285 2.242a1.25 1.25 0 0 1-2.473-.37c.419-2.792.566-5.455.566-8.288v-1.841a1.271 1.271 0 0 1 0-.333v-2.271c0-1.624-1.1-3.164-2.616-3.709a22.96 22.96 0 0 0-6.384-1.283v5.99a1.25 1.25 0 0 1-2.5 0v-5.99a22.65 22.65 0 0 0-5.549 1.009 1.25 1.25 0 0 1-.749-2.386c.66-.207 1.324-.386 1.992-.537v-2.147c0-3.127 2.428-5.556 5.556-5.556 3.126 0 5.556 2.416 5.556 5.556v2.147c.984.222 1.957.503 2.914.841l.005.002c2.499.895 4.276 3.37 4.276 6.063v1.187h4.473c1.76 0 3.066-1.31 3.066-3.056v-5.745c0-.69.56-1.25 1.25-1.25Zm-18.484 1.524v-1.713c0-1.755-1.307-3.056-3.056-3.056-1.747 0-3.056 1.31-3.056 3.056v1.712a25.153 25.153 0 0 1 6.112.001Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1=".385" y1="0" x2="80.385" y2="80" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >Premium Antivirus</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label2" aria-labelledby="feature2" data-bs-parent="#features">Protection for all your compatible devices.</div>
+                            </div>
+                            <div class="collapse-hdr">Privacy</div>
+                            <div class="collapse-title collapse-disabled">
+                              <a id="feature3" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label3" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="49" height="48" viewBox="0 0 81 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M40.995.326c-4.531 0-7.856 4.259-6.757 8.655l4.836 19.345h-9.079c-8.008 0-14.5 6.492-14.5 14.5V65.326c0 1.1-.623 2.631-1.682 4.342-1.022 1.65-2.305 3.241-3.313 4.398-1.379 1.581-.349 4.26 1.91 4.26h53.085v-35.5c0-8.008-6.492-14.5-14.5-14.5h-8.079l4.837-19.345C48.851 4.585 45.526.326 40.994.326Zm-3.847 7.927a3.965 3.965 0 1 1 7.694 0l-3.847 15.389-3.847-15.389ZM18.495 42.826c0-6.351 5.149-11.5 11.5-11.5h21c6.351 0 11.5 5.149 11.5 11.5v6h-44V42.826Zm0 9V65.326c0 1.989-1.025 4.133-2.131 5.92-.935 1.511-2.043 2.943-2.995 4.08h14.126v-11h3v11h9v-8h3v8h8.5v-4.5h3v4.5h8.5v-23.5h-44Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1="9.877" y1=".326" x2="83.619" y2="52.908" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >Personal Data Cleanup</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label3" aria-labelledby="feature3" data-bs-parent="#features">Scan for your info online and then remove it from the web.</div>
+                            </div>
+                            <div class="collapse-title">
+                              <a id="feature4" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label4" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="50" height="48" viewBox="0 0 82 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="m15.303 29.716-2.117-2.126c6.072-6.05 14.447-9.79 23.696-9.79 9.316 0 17.745 3.794 23.827 9.922l-2.112 2.13c-5.54-5.59-13.223-9.052-21.715-9.052-8.423 0-16.05 3.406-21.58 8.916Zm21.578 4.866c3.07 0 5.948.825 8.425 2.264l-4.35 1.349a13.783 13.783 0 0 0-4.075-.613c-3.802 0-7.245 1.54-9.739 4.029l-2.116-2.126a16.732 16.732 0 0 1 11.855-4.903Zm.105 13.193c1.023 0 1.946.427 2.6 1.112l-2.6 2.613-2.601-2.613a3.587 3.587 0 0 1 2.601-1.112Zm-.099-43.763c13.1 0 24.958 5.32 33.532 13.916l2.112-2.13C63.415 6.664 50.81 1.012 36.887 1.012c-13.871 0-26.433 5.61-35.54 14.683l2.117 2.126C12.028 9.288 23.842 4.012 36.887 4.012Zm25.289 32.879.445.138L80.23 42.5l1.055.328v19.872c0 4.423-2.362 8.51-6.194 10.719l-10.083 5.81a5.672 5.672 0 0 1-5.664 0l-10.083-5.81a12.372 12.372 0 0 1-6.194-10.72V42.828l1.055-.328 17.609-5.47.445-.138Zm-16.11 8.145V62.7a9.372 9.372 0 0 0 4.693 8.12l10.082 5.81a2.673 2.673 0 0 0 2.67 0l10.082-5.81a9.372 9.372 0 0 0 4.692-8.12V45.036l-16.11-5.004-16.108 5.004Zm6.466 12.532 5.52 5.52c.106.106.279.106.385 0l6.36-6.361 7.614-7.614 2.122 2.121-7.614 7.614-6.36 6.36a3.273 3.273 0 0 1-4.629 0l-5.519-5.518 2.121-2.122Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1="1.347" y1="1.012" x2="80.315" y2="80.944" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >Secure VPN</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label4" aria-labelledby="feature4" data-bs-parent="#features">Protect your Wi-Fi connection with unlimited VPN.</div>
+                            </div>
+                            <div class="collapse-hdr">Identity</div>
+                            <div class="collapse-title collapse-disabled">
+                              <a id="feature5" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label5" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" viewBox="0 0 80 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M40.447.568 40 .428l-.447.14-34 10.626-1.053.329v40.275a17.97 17.97 0 0 0 8.957 15.546l17.765 10.3a17.5 17.5 0 0 0 17.556 0l17.765-10.3A17.97 17.97 0 0 0 75.5 51.798V11.523l-1.053-.33-34-10.625ZM7.5 51.798v-38.07L40 3.572l32.5 10.156v38.07a14.97 14.97 0 0 1-7.462 12.951l-17.765 10.3a14.5 14.5 0 0 1-14.546 0l-17.765-10.3A14.97 14.97 0 0 1 7.5 51.798Zm33.265-18.39a2.444 2.444 0 1 1 4.888 0 2.444 2.444 0 0 1-4.888 0Zm2.444-5.415a5.415 5.415 0 1 0 0 10.83 5.415 5.415 0 0 0 0-10.83Zm0-2.03a7.445 7.445 0 1 0 0 14.891 7.445 7.445 0 0 0 0-14.89ZM32.793 33.41c0-5.753 4.663-10.417 10.416-10.417s10.417 4.664 10.417 10.417-4.664 10.416-10.417 10.416-10.416-4.663-10.416-10.416Zm-12.93 9.785a1.486 1.486 0 0 0-2.74 1.15A28.358 28.358 0 0 0 34.16 60.207a1.486 1.486 0 1 0 .95-2.815 25.386 25.386 0 0 1-15.247-14.2Zm17.875-23.457c.38.727.1 1.625-.627 2.005a13.16 13.16 0 0 0-7.063 11.667c0 7.269 5.893 13.161 13.161 13.161 5.515 0 10.242-3.393 12.199-8.21a13.12 13.12 0 0 0 .962-4.951 1.486 1.486 0 1 1 2.972 0 16.09 16.09 0 0 1-1.181 6.069c-2.397 5.9-8.186 10.063-14.952 10.063-8.91 0-16.132-7.222-16.132-16.132 0-6.214 3.513-11.605 8.655-14.299.727-.38 1.625-.1 2.006.627ZM24.095 29.09a1.486 1.486 0 0 0-2.899-.652c-.36 1.6-.55 3.264-.55 4.97 0 12.46 10.102 22.562 22.563 22.562 2.118 0 4.17-.292 6.118-.84a1.486 1.486 0 0 0-.804-2.86 19.61 19.61 0 0 1-5.314.73c-10.82 0-19.591-8.772-19.591-19.592 0-1.485.165-2.93.477-4.318Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1="4.5" y1=".428" x2="83.562" y2="70.969" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >$1M Identity Theft Coverage</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label5" aria-labelledby="feature5" data-bs-parent="#features">Up to $1 million for ID fraud recovery expenses.</div>
+                            </div>
+                            <div class="collapse-title collapse-disabled">
+                              <a id="feature6" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label6" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="48" height="48" viewBox="0 0 80 80">
+                                      <g clip-path="url(#a)">
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M23.943 3.74a1.5 1.5 0 0 1 2.046-.559l14.041 8.023 14.04-8.023a1.5 1.5 0 1 1 1.489 2.605l-14.027 8.015v23.99l20.771-11.992-.072-16.16a1.5 1.5 0 1 1 3-.013l.072 16.171 13.969 8.148a1.5 1.5 0 0 1-1.512 2.592l-13.956-8.14-20.77 11.992 20.77 11.992 13.956-8.14a1.5 1.5 0 0 1 1.512 2.59L65.303 54.98l-.072 16.17a1.5 1.5 0 1 1-3-.013l.072-16.159-20.77-11.992v23.991l14.027 8.016a1.5 1.5 0 0 1-1.489 2.605l-14.04-8.024-14.04 8.023a1.5 1.5 0 0 1-1.49-2.604l14.031-8.018V42.987L17.755 54.983l.072 16.157a1.5 1.5 0 1 1-3 .013l-.072-16.17L.786 46.834a1.5 1.5 0 1 1 1.512-2.592l13.957 8.142 20.778-11.996-20.775-11.995-13.96 8.143a1.5 1.5 0 1 1-1.512-2.591l13.969-8.148.071-16.171a1.5 1.5 0 0 1 3 .013l-.071 16.154L38.532 37.79V13.804L24.501 5.786a1.5 1.5 0 0 1-.558-2.047Z"
+                                          fill="url(#b)"></path>
+                                      </g>
+                                      <defs>
+                                        <linearGradient id="b" x1=".042" y1="2.983" x2="74.687" y2="82.781" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                        <clipPath id="a"><path fill="#fff" d="M0 0h80v80H0z"></path></clipPath>
+                                      </defs></svg></span
+                                  >Security Freeze</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label6" aria-labelledby="feature6" data-bs-parent="#features">Prevent access to your credit info, bank, and utility accounts.</div>
+                            </div>
+                            <div class="collapse-hdr"></div>
+                            <div class="collapse-title collapse-disabled">
+                              <a id="feature7" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label7" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="49" height="48" viewBox="0 0 81 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="m40.832.568-.447-.14-.448.14-34 10.625-1.052.33v40.275a17.97 17.97 0 0 0 8.957 15.546l17.765 10.3a17.5 17.5 0 0 0 17.555 0l17.766-10.3a17.97 17.97 0 0 0 8.957-15.546V11.522l-1.053-.329-34-10.625ZM7.885 51.798v-38.07l32.5-10.157 32.5 10.157v38.07a14.97 14.97 0 0 1-7.462 12.95L47.658 75.05a14.5 14.5 0 0 1-14.546 0l-17.766-10.3a14.97 14.97 0 0 1-7.461-12.951ZM42.7 20v-1.5h-3v5.037c-1.728.194-3.585.738-5.16 1.794-2.115 1.418-3.655 3.727-3.655 7.05 0 1.468.555 3.55 2.165 5.278 1.65 1.771 4.278 3.031 8.15 3.031 3.202 0 4.786.97 5.6 1.916.854.993 1.085 2.222 1.085 3.084 0 .865-.265 2.47-1.219 3.814-.892 1.257-2.476 2.424-5.466 2.424-1.771 0-3.669-.297-5.071-1.112-1.292-.75-2.244-1.972-2.244-4.197v-1.5h-3v1.5c0 3.346 1.566 5.53 3.737 6.79 1.572.914 3.405 1.318 5.078 1.458V60.5h3v-5.655c3.086-.356 5.14-1.81 6.413-3.605 1.407-1.984 1.772-4.248 1.772-5.55 0-1.305-.336-3.325-1.811-5.04-1.517-1.763-4.025-2.96-7.874-2.96-3.18 0-4.961-1.01-5.955-2.076-1.034-1.11-1.36-2.432-1.36-3.233 0-2.25.978-3.655 2.326-4.558 1.418-.95 3.306-1.37 4.989-1.37 1.58 0 3.144.522 4.283 1.393 1.123.859 1.772 1.997 1.772 3.297v1.5h3v-1.5c0-2.415-1.24-4.372-2.95-5.68-1.308-1-2.925-1.654-4.605-1.9V20Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1="4.885" y1=".428" x2="83.947" y2="70.969" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >$25K Ransomware Coverage</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label7" aria-labelledby="feature7" data-bs-parent="#features">We cover you for up to 25k in losses due to ransomware.</div>
+                            </div>
+                            <div class="collapse-title collapse-disabled">
+                              <a id="feature8" class="collapse-btn collapsed" data-bs-toggle="collapse" href="#label8" aria-expanded="false"
+                                ><span class="collapse-btn-content"
+                                  ><span class="collapse-icon"
+                                    ><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="49" height="48" viewBox="0 0 81 80">
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="m41.043.568-.447-.14-.448.14-34 10.626-1.053.329v40.275a17.97 17.97 0 0 0 8.957 15.546l17.766 10.3a17.5 17.5 0 0 0 17.555 0l17.766-10.3a17.97 17.97 0 0 0 8.957-15.546V11.523l-1.053-.33-34-10.625ZM8.095 51.798v-38.07l32.5-10.156 32.5 10.156v38.07a14.97 14.97 0 0 1-7.461 12.951l-17.766 10.3a14.5 14.5 0 0 1-14.546 0l-17.765-10.3a14.97 14.97 0 0 1-7.462-12.951Zm16.044-5.59c0-8.996 7.293-16.29 16.29-16.29 8.996 0 16.29 7.294 16.29 16.29 0 8.997-7.294 16.29-16.29 16.29-8.997 0-16.29-7.293-16.29-16.29Zm3.6-14.644a19.332 19.332 0 0 0-6.687 14.644c0 10.702 8.675 19.377 19.377 19.377 10.701 0 19.376-8.675 19.376-19.377 0-5.848-2.59-11.091-6.687-14.644v-5.418c0-7.008-5.681-12.69-12.69-12.69-7.007 0-12.688 5.682-12.688 12.69v5.418Zm22.292-2.19v-3.228a9.603 9.603 0 1 0-19.205 0v3.229a19.288 19.288 0 0 1 9.603-2.543c3.494 0 6.772.924 9.602 2.543Zm-9.602 11.69a2.915 2.915 0 1 0 0 5.83 2.915 2.915 0 0 0 0-5.83Zm-6.002 2.915a6.002 6.002 0 1 1 7.545 5.802v3.115h-3.087V49.78a6.004 6.004 0 0 1-4.458-5.802Z"
+                                        fill="url(#a)"></path>
+                                      <defs>
+                                        <linearGradient id="a" x1="5.095" y1=".428" x2="84.158" y2="70.969" gradientUnits="userSpaceOnUse">
+                                          <stop offset=".323" stop-color="#FF1C1C"></stop>
+                                          <stop offset=".935" stop-color="#A60054"></stop>
+                                        </linearGradient>
+                                      </defs></svg></span
+                                  >Credit Lock</span
+                                ></a
+                              >
+                              <div class="collapse-body collapse" id="label8" aria-labelledby="feature8" data-bs-parent="#features">Lock and unlock your credit to stop unauthorized opening of accounts.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-8f60b29b32">
+                            <div class="features-post-content"><a title="See All Benefits" aria-label="See All Benefits" data-pagesection="hero" data-navelement="compare-all-plans" href="#seeAllBenefits" target="_self">Compare all plans</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flexcolumn-col">
+                      <div class="flexcolumn-content">
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-5b965d3fa0">
+                            <h1 class="hero-title">Stay on the <b>safe side</b></h1>
+                            <div class="hero-description">
+                              <b><span class="rteFontColor fc-attention">New </span></b>Scam Detector spots risky texts, emails, and videos to keep you safer from financial fraud.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-cd282313d7"><div class="section-title">Select an option below to see what's included.</div></div>
+                        </div>
+                        <div class="cmp-radiobutton placeholder-glow">
+                          <div class="radio-container">
+                            <div class="radio-section-button">
+                              <form>
+                                <fieldset>
+                                  <legend class="d-none">Offer details</legend>
+                                  <div class="cmp-radiobuttonitem placeholder-glow">
+                                    <label class="radio-button" for="sp1radiomulti"
+                                      ><div class="radio-col1"><input class="radio-input" id="sp1radiomulti" type="radio" value="sp1" /></div>
+                                      <div class="radio-col2">
+                                        <div class="radio-content">
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="radio-title">Advanced&nbsp;<!----></div>
+                                              <div class="radio-badge"><!----></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="price-container"><span class="retail-price">$199.99</span></div>
+                                              <div class="final-price"><span class="rte_ddr">$59.99*</span></div>
+                                            </div>
+                                          </div>
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="plan-description">1-year</div>
+                                              <div class="radio-discountdescription"><span class="discount-description">Save</span>&nbsp;<span class="discount-price">$140.00</span></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="payment-description">
+                                                <span class="rte_ddr" data-ddr-path="custom" data-ddr-name="Custom DDR Expression">Available in 4 payments of $15.00 with&nbsp;<img class="rte_image" src="https://media.mcafeeassets.com/content/dam/npcld/standard/ecommerce/en-us/payments/paypal-logo.svg" alt="PayPal" width="65" height="18" /></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div></div
+                                    ></label>
+                                  </div>
+                                  <div class="cmp-radiobuttonitem placeholder-glow">
+                                    <label class="radio-button" for="sp2radiomulti"
+                                      ><div class="radio-col1"><input class="radio-input" id="sp2radiomulti" type="radio" value="sp2" /></div>
+                                      <div class="radio-col2">
+                                        <div class="radio-content">
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="radio-title">Premium&nbsp;<!----></div>
+                                              <div class="radio-badge"><!----></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="price-container"><span class="retail-price">$149.99</span></div>
+                                              <div class="final-price"><span class="rte_ddr">$39.99*</span></div>
+                                            </div>
+                                          </div>
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="plan-description">1-year</div>
+                                              <div class="radio-discountdescription"><span class="discount-description">Save</span>&nbsp;<span class="discount-price">$110.00</span></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="payment-description">
+                                                <span class="rte_ddr" data-ddr-path="custom" data-ddr-name="Custom DDR Expression">Available in 4 payments of $10.00 with&nbsp;<img class="rte_image" src="https://media.mcafeeassets.com/content/dam/npcld/standard/ecommerce/en-us/payments/paypal-logo.svg" alt="PayPal" width="65" height="18" /></span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div></div
+                                    ></label>
+                                  </div>
+                                  <div class="cmp-radiobuttonitem placeholder-glow">
+                                    <label class="radio-button" for="sp3radiomulti"
+                                      ><div class="radio-col1"><input class="radio-input" id="sp3radiomulti" type="radio" value="sp3" /></div>
+                                      <div class="radio-col2">
+                                        <div class="radio-content">
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="radio-title">Basic&nbsp;<span class="rte_ddr" data-ddr-path="/content/ecommerce/personalization/data-rules/component/is-mls-product/jcr:content/root" data-ddr-name="Is MLS product">- 1 Device</span></div>
+                                              <div class="radio-badge"><span class="rte_ddr" data-ddr-path="custom" data-ddr-name="Custom DDR Expression">Recommended</span></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="price-container"><span class="retail-price">$89.99</span></div>
+                                              <div class="final-price"><span class="rte_ddr">$19.99*</span></div>
+                                            </div>
+                                          </div>
+                                          <div class="price-row">
+                                            <div class="radioitem-left">
+                                              <div class="plan-description">1-year</div>
+                                              <div class="radio-discountdescription"><span class="discount-description">Save</span>&nbsp;<span class="discount-price">$70.00</span></div>
+                                            </div>
+                                            <div class="radioitem-right">
+                                              <div class="payment-description"><!----></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div></label
+                                    >
+                                  </div>
+                                </fieldset>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cmp-price-dropdown placeholder-glow"><!----></div>
+                        <div class="cmp-richtext placeholder-glow"><!----></div>
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-f0fde9fd74">
+                            <div class="dropdown-description">
+                              <!----><b>That's about $1.66 a month!</b>
+                              <!---->
+                            </div>
+                            <div class="dropdown-description"><!----></div>
+                            <div class="section-description"><!----></div>
+                          </div>
+                        </div>
+                        <div class="cmp-addtocart">
+                          <div class="button" id="addtocart--1005584958">
+                            <a
+                              class="button-label btn"
+                              data-buynow-click="true"
+                              data-nav-element-click="true"
+                              data-offer-bind="multi=sp1"
+                              data-button-section-tag="hero"
+                              aria-label="renew-now"
+                              aria-disabled="false"
+                              href="https://www.mcafee.com/consumer/en-us/ipz/checkout/2web/payment.html?tm_local_lp_ab_test_variant=expops-1126_en-us_atp_dpp_pre_upsell_cl&amp;adobe_mc_sdid=SDID%3D126CAA963BB90C38-4CC52938F91A8783%7CMCORGID%3DA729776A5245B1590A490D44%40AdobeOrg%7CTS%3D1767671374&amp;moguid=2c32131f-4a76-4203-b670-f2d48dc643d7&amp;culture=en-us&amp;affid=1660&amp;osn=default&amp;pkgCode=mls_539&amp;pt=1yp&amp;fp=19.99&amp;curCode=usd&amp;btnSec=hero&amp;cctype=expiry&amp;ccstype=default&amp;cseg=default&amp;cexp=&amp;ccta=mls_539%3A1yp%3A19.99%3Ausd%3Ahero&amp;ccpubn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault%40mls_539%3A1yp%3A19.99%3Ausd%3Ahero&amp;ccpun=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault&amp;ccpn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl&amp;csrc=&amp;csrcl2=&amp;cls=0&amp;cupf=0&amp;cafcat=&amp;ccoe=&amp;ccoel2=&amp;ak_culture=&amp;ipst=&amp;ipcon=&amp;origin=macrometa"
+                              data-ccpubn="en-us:lp:atp:exp:standard-pre_cl@:default@mls_539:1yp:19.99:usd:hero"
+                              data-navigation-element="expiry|default|539:hero:renew-now"
+                              data-packagecode="539"
+                              data-plantype="1yp"
+                              data-finalprice="19.99"
+                              data-currencycode="usd"
+                              data-section="hero"
+                              data-__p3_preload="0"
+                              ><span class="cta-text">Renew now</span></a
+                            >
+                          </div>
+                        </div>
+                        <div class="cmp-flex-column placeholder-glow">
+                          <div id="flexcolumn-1295024009">
+                            <div class="flexcolumn-row row">
+                              <div class="flexcolumn-col">
+                                <div class="flexcolumn-content">
+                                  <div class="cmp-collapse placeholder-glow">
+                                    <div class="collapse-container d-flex flex-column-reverse" id="collapse-177286386-container">
+                                      <div class="collapse expand-content" id="collapse-177286386-expand"><div class="expand-description">In the first 30 days of your purchase, you can decide to cancel your subscription for any reason and ask us for a refund.</div></div>
+                                      <div class="collapse-title">
+                                        <a class="collapse-btn btn collapseLabel" data-bs-toggle="collapse" href="#" data-bs-target="#collapse-177286386-expand" aria-expanded="false" aria-controls="collapse-177286386-expand"
+                                          ><span class="collapse-icon"
+                                            ><svg width="16px" height="16px" viewBox="0 0 16 16"><path fill="#24BC98" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm4.58-10.648L6.666 11.56 3.42 8.152l1.158-1.103L6.667 9.24 11.42 4.25l1.158 1.103z"></path></svg></span
+                                          >30-day money back guarantee</a
+                                        >
+                                        <a class="collapse-btn btn expandLabel d-none" data-bs-toggle="collapse" data-bs-target="#collapse-177286386-expand" href="#" aria-expanded="false" aria-controls="collapse-177286386-expand"
+                                          ><span class="collapse-icon"
+                                            ><svg width="16px" height="16px" viewBox="0 0 16 16"><path fill="#24BC98" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm4.58-10.648L6.666 11.56 3.42 8.152l1.158-1.103L6.667 9.24 11.42 4.25l1.158 1.103z"></path></svg></span
+                                          >30-day money back guarantee</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="flexcolumn-col">
+                                <div class="flexcolumn-content">
+                                  <div class="cmp-collapse placeholder-glow">
+                                    <div class="collapse-container d-flex flex-column-reverse" id="collapse--19227119-container">
+                                      <div class="collapse expand-content" id="collapse--19227119-expand"><div class="expand-description">If we cannot remove a virus from your supported device we’ll refund you the amount you paid for your current term subscription.</div></div>
+                                      <div class="collapse-title">
+                                        <a class="collapse-btn btn collapseLabel" data-bs-toggle="collapse" href="#" data-bs-target="#collapse--19227119-expand" aria-expanded="false" aria-controls="collapse--19227119-expand"
+                                          ><span class="collapse-icon"
+                                            ><svg width="16px" height="16px" viewBox="0 0 16 16"><path fill="#24BC98" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm4.58-10.648L6.666 11.56 3.42 8.152l1.158-1.103L6.667 9.24 11.42 4.25l1.158 1.103z"></path></svg></span
+                                          >100% guarantee viruses removed</a
+                                        >
+                                        <a class="collapse-btn btn expandLabel d-none" data-bs-toggle="collapse" data-bs-target="#collapse--19227119-expand" href="#" aria-expanded="false" aria-controls="collapse--19227119-expand"
+                                          ><span class="collapse-icon"
+                                            ><svg width="16px" height="16px" viewBox="0 0 16 16"><path fill="#24BC98" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm4.58-10.648L6.666 11.56 3.42 8.152l1.158-1.103L6.667 9.24 11.42 4.25l1.158 1.103z"></path></svg></span
+                                          >100% guarantee viruses removed</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cmp-richtext placeholder-glow">
+                          <div class="richtext" id="richtext-77bd45371a">
+                            <div class="offer-terms">* Price shown is for first year. See <a title="Offer Terms" aria-label="Offer Terms" data-pagesection="hero" data-navelement="offer-terms" href="#offerterms" target="_self">offer details</a> below.</div>
+                            <div class="payment-cards" data-payment-methods="true" data-payment-initialized="true">
+                              <span id="paymenttypeicon_CreditCard" title="VISA" alt="VISA" data-pimage="visa" class="pay-icon visa me-1"></span><span id="paymenttypeicon_CreditCard" title="MASTER CARD" alt="MASTER CARD" data-pimage="mastercard" class="pay-icon mastercard me-1"></span
+                              ><span id="paymenttypeicon_CreditCard" title="AMERICAN EXPRESS" alt="AMERICAN EXPRESS" data-pimage="americanexpress" class="pay-icon americanexpress me-1"></span><span id="paymenttypeicon_CreditCard" title="DISCOVER" alt="DISCOVER" data-pimage="discover" class="pay-icon discover me-1"></span
+                              ><span id="paymenttypeicon_CreditCard" title="PayPal" alt="PayPal" data-pimage="paypal" class="pay-icon paypal me-1"></span>
+                            </div>
+                            <div class="os-supported">Windows® | macOS® | Android™ | iOS® | ChromeOS®</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cmp-sectionpicker">
+      <div class="image-blade-content var1">
+        <div class="cmp-imageblade placeholder-glow">
+          <div class="section section-color primary" id="section-1781347170" data-attribute-section-tag="features">
+            <div class="section-content">
+              <div class="image-blade-section row flex-row-reverse">
+                <div class="image-blade-col1 image-blades"><img class="blade-image" src="https://media.mcafeeassets.com/content/dam/npcld/ecommerce/en-gb/atp/scam-detector/scam-detector-blade.png" height="447" width="553" alt="scam detector" /></div>
+                <div class="image-blade-col2 blade-content">
+                  <div class="cmp-richtext placeholder-glow">
+                    <div class="richtext" id="richtext-d6385bb52f">
+                      <div class="section-badge">
+                        <span class="section-badge-label">NEW</span>
+                        <div class="section-pre-title"><b>Scam Detector</b></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cmp-image placeholder-glow"></div>
+                  <div class="cmp-richtext placeholder-glow">
+                    <div class="richtext" id="richtext-1525e7d65a">
+                      <h2 class="section-title"><b>Stay one step ahead of scammers</b></h2>
+                      <div class="section-description">Connect and share confidently, knowing we’ll help protect you from <b>text, email, and deepfake video scams</b>. Scam Detector analyzes suspicious links, messages, and even screenshots—so you don’t have to guess. <b>We’ll identify scams before you click and can even block risky sites if you do.</b></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- compchart -->
+    <section class="cmp-sectionpicker">
+      <div class="three-plan-comparator var1">
+        <div class="cmp-section placeholder-glow">
+          <div class="section section-color primary" id="section-1884501900" data-attribute-section-tag="comparison">
+            <div class="section-content">
+              <div class="cmp-richtext placeholder-glow">
+                <div class="richtext" id="richtext-4dc97488c0">
+                  <h2 class="section-title"><a id="seeAllBenefits"></a>Pick a plan just right for you</h2>
+                </div>
+              </div>
+              <div class="htmlcomponentreference">
+                <div class="comparison row">
+                  <div class="feature-column">
+                    <div class="feature-card">
+                      <div class="feature-card-conatiner">
+                        <div class="feature-card-text">
+                          <!---->
+                          <h3 class="feature-card-title">Features</h3>
+                          <div class="feature-card-content">
+                            <ul class="feature-card-column">
+                              <li class="feature-list-item mt-0 mb-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Automatic scam protection for text, email, and video.">Scam Detector</li>
+                              <li class="feature-list-title">Identity</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="We'll alert you to credit activity and if unauthorized, you can act to help prevent fraud or identity theft.">Credit monitoring</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Stay on top of changes to your credit report and score, from a single location.">Credit score</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Avoid damage to your credit by preventing unauthorized new accounts or access to your existing accounts with credit, bank or utility freezes.">Security freeze</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Avoid damage to your credit by preventing unauthorized new accounts or access to your existing accounts with credit, bank or utility freezes.">Transaction monitoring</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Get coverage for lost funds and expenses involved in restoring your identity - including coverage for losses to your 401(k) accounts.">$1M identity theft coverage</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="If your IDs, credit and debit cards are lost or stolen, we'll help you get them cancelled and replaced with minimal effort for you.">Lost wallet protection</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Our licensed experts help restore your identity should the unexpected happen.">Identity restoration experts</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Monitor up to 60 unique types of personal information on the dark web with alerts up to 10 months sooner than similar services.">Identity monitoring</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Secure your accounts by generating and storing complex passwords and auto-filling your info for faster logins across devices.">Password manager</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Quickly lock and unlock your credit to help prevent the unauthorized opening of accounts in your name.">Credit lock</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="In the event of a ransomware attack, where a hacker takes control of your personal data and demands payment, you're covered up to $25K for financial loss as part of your identity theft coverage.">
+                                $25k ransomware coverage
+                              </li>
+                              <li class="feature-list-title">Privacy</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Get help to remove your personal info from old online accounts still holding onto it. Just enter your Gmail or Microsoft (Outlook, Hotmail, MSN, etc.) email address.">Online Account Cleanup</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Help prevent your personal info from being sold online by scanning over 40 high-risk data broker sites for your personal info so it can be removed.">Personal Data Cleanup</li>
+                              <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Stay private and secure on public Wi-Fi with VPN that connects automatically when you need it.">VPN - virtual private network</li>
+                              <li class="feature-list-title">Security</li>
+                            </ul>
+                          </div>
+                          <div class="feature-collapse">
+                            <a data-bs-toggle="collapse" href="#viewall_individual" role="button" aria-expanded="false" aria-controls="viewall_individual"> View all included </a>
+                            <div class="feature-collapse-items collapse" id="viewall_individual">
+                              <ul class="feature-card-column">
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Protect all your personal devices and the info on them from the latest threats with award-winning antivirus.">Antivirus</li>
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Delete sensitive files completely to ensure no traces are left behind.">File shredder</li>
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Browse confidently knowing you're protected with color coded links to identify malware and phishing sites.">Web protection</li>
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Secure your firewall and block hackers from accessing your home network.">Firewall</li>
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Get technical assistance and peace of mind from our dedicated team and support knowledge-base.">Expert online support</li>
+                                <li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Industry-first Protection Score lets you see how safe you are online and easily fix weak spots to boost your score.">Protection Score</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offers-row row">
+                    <div class="offer-column col">
+                      <div class="offer-card">
+                        <!---->
+                        <div class="offer-card-body">
+                          <div class="offer-card-content">
+                            <div class="offer-card-text">
+                              <div class="company-logo">McAfee<span class="plus-icon">+</span></div>
+                              <h3 class="offer-title">Advanced<!----></h3>
+                            </div>
+                            <div class="divider-grey"></div>
+                            <div class="price-block">
+                              <div class="final-price">
+                                <span class="rte_ddr">$59.99<sup>*</sup></span
+                                ><!---->
+                              </div>
+                              <div class="retail-price">$199.99</div>
+                              <div class="offer-discountdescription">
+                                <span class="discount-description">Save</span>&nbsp;<span class="discount-price">$140.00</span>
+                                <!---->
+                              </div>
+                              <!---->
+                            </div>
+                            <div class="button" id="addtocart-plan1">
+                              <a
+                                class="button-label btn"
+                                data-buynow-click="true"
+                                data-nav-element-click="true"
+                                data-offer-bind="sp1"
+                                data-button-section-tag="compare"
+                                aria-label="compare:Renew Now"
+                                aria-disabled="false"
+                                href="https://www.mcafee.com/consumer/en-us/ipz/checkout/2web/payment.html?tm_local_lp_ab_test_variant=expops-1126_en-us_atp_dpp_pre_upsell_cl&amp;adobe_mc_sdid=SDID%3D126CAA963BB90C38-4CC52938F91A8783%7CMCORGID%3DA729776A5245B1590A490D44%40AdobeOrg%7CTS%3D1767671374&amp;moguid=7f3bd82f-20f2-44d6-87f9-3b23879ad6e6&amp;culture=en-us&amp;affid=1660&amp;osn=default&amp;pkgCode=mai_663&amp;pt=1yp&amp;fp=59.99&amp;curCode=usd&amp;btnSec=compare&amp;tua=1&amp;cctype=expiry&amp;ccstype=default&amp;cseg=default&amp;cexp=&amp;ccta=mai_663%3A1yp%3A59.99%3Ausd%3Acompare&amp;ccpubn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault%40mai_663%3A1yp%3A59.99%3Ausd%3Acompare&amp;ccpun=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault&amp;ccpn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl&amp;csrc=&amp;csrcl2=&amp;cls=0&amp;cupf=0&amp;cafcat=&amp;ccoe=&amp;ccoel2=&amp;ak_culture=&amp;ipst=&amp;ipcon=&amp;origin=macrometa"
+                                data-ccpubn="en-us:lp:atp:exp:standard-pre_cl@:default@mai_663:1yp:59.99:usd:compare"
+                                data-navigation-element="expiry|default|663:compare:renew-now"
+                                data-packagecode="663"
+                                data-plantype="1yp"
+                                data-finalprice="59.99"
+                                data-currencycode="usd"
+                                data-section="compare"
+                                data-__p3_preload="0">
+                                Renew Now
+                              </a>
+                            </div>
+                            <div class="feature-card-content">
+                              <ul class="feature-card-column">
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey"></li>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="We'll alert you to credit activity with one credit bureau so you can take action on unauthorized activity that could indicate fraud or identity theft.">1 bureau</li></div>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Stay on top of monthly changes to your credit report and score, from a single location.">Monthly</li></div>
+                                <div><li class="cmp-checkmark">&nbsp;</li></div>
+                                <div><li class="cmp-checkmark">&nbsp;</li></div>
+                                <div><li class="cmp-checkmark">&nbsp;</li></div>
+                                <div><li class="cmp-checkmark">&nbsp;</li></div>
+                                <div><li class="cmp-checkmark">&nbsp;</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="divider-grey my-4"></li>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Regularly scans for and then removes your personal info from over 40 high-risk data broker sites.">Scans</li></div>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Regularly scans for and then removes your personal info from over 40 high-risk data broker sites.">Full-service</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey my-4"></li>
+                              </ul>
+                            </div>
+                            <div class="feature-collapse-items collapse" id="viewall_individual">
+                              <ul class="feature-card-column">
+                                <div><li class="feature-list-item">Unlimited devices*</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offers-row row">
+                    <div class="offer-column col">
+                      <div class="offer-card">
+                        <!---->
+                        <div class="offer-card-body">
+                          <div class="offer-card-content">
+                            <div class="offer-card-text">
+                              <div class="company-logo">McAfee<span class="plus-icon">+</span></div>
+                              <h3 class="offer-title">Premium<!----></h3>
+                            </div>
+                            <div class="divider-grey"></div>
+                            <div class="price-block">
+                              <div class="final-price">
+                                <span class="rte_ddr"
+                                  >$39.99<sup>*</sup
+                                  ><!----></span
+                                >
+                              </div>
+                              <div class="retail-price">$149.99</div>
+                              <div class="offer-discountdescription">
+                                <span class="discount-description">Save</span>&nbsp;<span class="discount-price">$110.00</span>
+                                <!---->
+                              </div>
+                              <!----><!---->
+                            </div>
+                            <div class="button" id="addtocart-plan1">
+                              <a
+                                class="button-label btn"
+                                data-buynow-click="true"
+                                data-nav-element-click="true"
+                                data-offer-bind="sp2"
+                                data-button-section-tag="compare"
+                                aria-label="compare:Renew Now"
+                                aria-disabled="false"
+                                href="https://www.mcafee.com/consumer/en-us/ipz/checkout/2web/payment.html?tm_local_lp_ab_test_variant=expops-1126_en-us_atp_dpp_pre_upsell_cl&amp;adobe_mc_sdid=SDID%3D126CAA963BB90C38-4CC52938F91A8783%7CMCORGID%3DA729776A5245B1590A490D44%40AdobeOrg%7CTS%3D1767671374&amp;moguid=454b97b1-2931-425c-aa77-f086ff28221e&amp;culture=en-us&amp;affid=1660&amp;osn=default&amp;pkgCode=mpri_665&amp;pt=1yp&amp;fp=39.99&amp;curCode=usd&amp;btnSec=compare&amp;cctype=expiry&amp;ccstype=default&amp;cseg=default&amp;cexp=&amp;ccta=mpri_665%3A1yp%3A39.99%3Ausd%3Acompare&amp;ccpubn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault%40mpri_665%3A1yp%3A39.99%3Ausd%3Acompare&amp;ccpun=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault&amp;ccpn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl&amp;csrc=&amp;csrcl2=&amp;cls=0&amp;cupf=0&amp;cafcat=&amp;ccoe=&amp;ccoel2=&amp;ak_culture=&amp;ipst=&amp;ipcon=&amp;origin=macrometa"
+                                data-ccpubn="en-us:lp:atp:exp:standard-pre_cl@:default@mpri_665:1yp:39.99:usd:compare"
+                                data-navigation-element="expiry|default|665:compare:renew-now"
+                                data-packagecode="665"
+                                data-plantype="1yp"
+                                data-finalprice="39.99"
+                                data-currencycode="usd"
+                                data-section="compare"
+                                data-__p3_preload="0">
+                                Renew Now
+                              </a>
+                            </div>
+                            <div class="feature-card-content">
+                              <ul class="feature-card-column">
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey"></li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="divider-grey my-4"></li>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Enter Scans Scan over 40 high-risk data broker sites for your personal info. Includes guidance to remove it.Value">Scans</li></div>
+                                <div><li class="feature-list-item" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-content="Enter Scans Scan over 40 high-risk data broker sites for your personal info. Includes guidance to remove it.Value">Scans</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey my-4"></li>
+                              </ul>
+                            </div>
+                            <div class="feature-collapse-items collapse" id="viewall_individual">
+                              <ul class="feature-card-column">
+                                <div><li class="feature-list-item">Unlimited devices*</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="offers-row row">
+                    <div class="offer-column col">
+                      <div class="offer-card">
+                        <div class="offer-card-badge">Recommended</div>
+                        <div class="offer-card-body">
+                          <div class="offer-card-content">
+                            <div class="offer-card-text">
+                              <div class="company-logo">McAfee<!----></div>
+                              <h3 class="offer-title">Basic<!----></h3>
+                            </div>
+                            <div class="divider-grey"></div>
+                            <div class="price-block">
+                              <div class="final-price">
+                                <span class="rte_ddr"
+                                  >$19.99<sup>*</sup
+                                  ><!----></span
+                                >
+                              </div>
+                              <div class="retail-price">$89.99</div>
+                              <div class="offer-discountdescription">
+                                <span class="discount-description">Save</span>&nbsp;<span class="discount-price">$70.00</span>
+                                <!---->
+                              </div>
+                              <!----><!---->
+                            </div>
+                            <div class="button" id="addtocart-plan1">
+                              <a
+                                class="button-label btn"
+                                data-buynow-click="true"
+                                data-nav-element-click="true"
+                                data-offer-bind="sp3"
+                                data-button-section-tag="compare"
+                                aria-label="compare:Renew Now"
+                                aria-disabled="false"
+                                href="https://www.mcafee.com/consumer/en-us/ipz/checkout/2web/payment.html?tm_local_lp_ab_test_variant=expops-1126_en-us_atp_dpp_pre_upsell_cl&amp;adobe_mc_sdid=SDID%3D126CAA963BB90C38-4CC52938F91A8783%7CMCORGID%3DA729776A5245B1590A490D44%40AdobeOrg%7CTS%3D1767671374&amp;moguid=2c32131f-4a76-4203-b670-f2d48dc643d7&amp;culture=en-us&amp;affid=1660&amp;osn=default&amp;pkgCode=mls_539&amp;pt=1yp&amp;fp=19.99&amp;curCode=usd&amp;btnSec=compare&amp;cctype=expiry&amp;ccstype=default&amp;cseg=default&amp;cexp=&amp;ccta=mls_539%3A1yp%3A19.99%3Ausd%3Acompare&amp;ccpubn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault%40mls_539%3A1yp%3A19.99%3Ausd%3Acompare&amp;ccpun=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl%40%3Adefault&amp;ccpn=en-us%3Alp%3Aatp%3Aexp%3Astandard-pre_cl&amp;csrc=&amp;csrcl2=&amp;cls=0&amp;cupf=0&amp;cafcat=&amp;ccoe=&amp;ccoel2=&amp;ak_culture=&amp;ipst=&amp;ipcon=&amp;origin=macrometa"
+                                data-ccpubn="en-us:lp:atp:exp:standard-pre_cl@:default@mls_539:1yp:19.99:usd:compare"
+                                data-navigation-element="expiry|default|539:compare:renew-now"
+                                data-packagecode="539"
+                                data-plantype="1yp"
+                                data-finalprice="19.99"
+                                data-currencycode="usd"
+                                data-section="compare"
+                                data-__p3_preload="0">
+                                Renew Now
+                              </a>
+                            </div>
+                            <div class="feature-card-content">
+                              <ul class="feature-card-column">
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey"></li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="divider-grey my-4"></li>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <div><li class="cmp-ecllipse">&nbsp;</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="divider-grey my-4"></li>
+                              </ul>
+                            </div>
+                            <div class="feature-collapse-items collapse" id="viewall_individual">
+                              <ul class="feature-card-column">
+                                <div><li class="feature-list-item">1 device*</li></div>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                                <li class="cmp-checkmark">&nbsp;</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cmp-richtext placeholder-glow">
+                <div class="richtext" id="richtext-c7f2963436">
+                  <div class="offer-terms">
+                    *First term price. Introductory Pricing for New Customers. <a title="Offer Term Details" aria-label="Offer Term Details" data-pagesection="compare chart" data-navelement="offer-terms" href="#offerterms" target="_self"><span class="rteFontColor fc-hilite">See offer details.</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
